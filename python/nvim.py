@@ -41,7 +41,7 @@ class Nvimdb: # {{{
     self.e  = xapian.Enquire(self.db)
     self.sorted_e = xapian.Enquire(self.db)
     # Value 2 is the lowercase form of the title
-    self.sorted_e.set_sort_by_value(2,False)
+    self.sorted_e.set_sort_by_value(2,True)
 
   #}}}
 
